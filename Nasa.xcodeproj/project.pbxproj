@@ -10,7 +10,6 @@
 		022FC31D927930B1291D7D00 /* Pods_Nasa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B93223F4411FF2A9B8617C6 /* Pods_Nasa.framework */; };
 		0AA49F5024AC340100E234D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA49F4F24AC340100E234D6 /* AppDelegate.swift */; };
 		0AA49F5224AC340100E234D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA49F5124AC340100E234D6 /* SceneDelegate.swift */; };
-		0AA49F5424AC340100E234D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA49F5324AC340100E234D6 /* ContentView.swift */; };
 		0AA49F5624AC340600E234D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA49F5524AC340600E234D6 /* Assets.xcassets */; };
 		0AA49F5924AC340600E234D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA49F5824AC340600E234D6 /* Preview Assets.xcassets */; };
 		0AA49F5C24AC340600E234D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA49F5A24AC340600E234D6 /* LaunchScreen.storyboard */; };
@@ -20,6 +19,8 @@
 		0AA49F9124AC428200E234D6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA49F9024AC428200E234D6 /* DetailView.swift */; };
 		0AA49F9524AC44C500E234D6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA49F9424AC44C500E234D6 /* DetailViewController.swift */; };
 		0AA49F9824AC461C00E234D6 /* DetailViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA49F9724AC461C00E234D6 /* DetailViewDelegate.swift */; };
+		0AA49FA024AC59E600E234D6 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA49F9F24AC59E600E234D6 /* ViewConfiguration.swift */; };
+		0AA49FA424AC649500E234D6 /* Copies.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AA49FA324AC649500E234D6 /* Copies.strings */; };
 		39FE1A8C529BD933E0FE03D0 /* Pods_Nasa_NasaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A161682E8F611B19CBD5106 /* Pods_Nasa_NasaUITests.framework */; };
 		848ACCB1F98B8603D1CFDF08 /* Pods_NasaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DBA5EFCEB09497D323B74E6 /* Pods_NasaTests.framework */; };
 /* End PBXBuildFile section */
@@ -45,7 +46,6 @@
 		0AA49F4C24AC340100E234D6 /* Nasa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nasa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA49F4F24AC340100E234D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AA49F5124AC340100E234D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0AA49F5324AC340100E234D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0AA49F5524AC340600E234D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AA49F5824AC340600E234D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0AA49F5B24AC340600E234D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +60,8 @@
 		0AA49F9024AC428200E234D6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		0AA49F9424AC44C500E234D6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0AA49F9724AC461C00E234D6 /* DetailViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewDelegate.swift; sourceTree = "<group>"; };
+		0AA49F9F24AC59E600E234D6 /* ViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
+		0AA49FA324AC649500E234D6 /* Copies.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Copies.strings; sourceTree = "<group>"; };
 		1E0F15338C4151BAFFD0CD2B /* Pods-Nasa-NasaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nasa-NasaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Nasa-NasaUITests/Pods-Nasa-NasaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		644FCA04416F85BD6F935E78 /* Pods-Nasa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nasa.debug.xcconfig"; path = "Target Support Files/Pods-Nasa/Pods-Nasa.debug.xcconfig"; sourceTree = "<group>"; };
 		6A161682E8F611B19CBD5106 /* Pods_Nasa_NasaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nasa_NasaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,8 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				0AA49F8A24AC417B00E234D6 /* feature */,
-				0AA49F5124AC340100E234D6 /* SceneDelegate.swift */,
-				0AA49F5324AC340100E234D6 /* ContentView.swift */,
 				0AA49F5524AC340600E234D6 /* Assets.xcassets */,
 				0AA49F5A24AC340600E234D6 /* LaunchScreen.storyboard */,
 				0AA49F5D24AC340600E234D6 /* Info.plist */,
@@ -165,6 +165,7 @@
 		0AA49F8A24AC417B00E234D6 /* feature */ = {
 			isa = PBXGroup;
 			children = (
+				0AA49F9D24AC597B00E234D6 /* CoreUI */,
 				0AA49F9B24AC4D5500E234D6 /* Commons */,
 				0AA49F8B24AC418A00E234D6 /* Detail */,
 			);
@@ -216,6 +217,7 @@
 		0AA49F9B24AC4D5500E234D6 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				0AA49FA124AC641B00E234D6 /* Resources */,
 				0AA49F9C24AC4D6900E234D6 /* Aplication */,
 			);
 			path = Commons;
@@ -224,9 +226,42 @@
 		0AA49F9C24AC4D6900E234D6 /* Aplication */ = {
 			isa = PBXGroup;
 			children = (
+				0AA49F5124AC340100E234D6 /* SceneDelegate.swift */,
 				0AA49F4F24AC340100E234D6 /* AppDelegate.swift */,
 			);
 			name = Aplication;
+			sourceTree = "<group>";
+		};
+		0AA49F9D24AC597B00E234D6 /* CoreUI */ = {
+			isa = PBXGroup;
+			children = (
+				0AA49F9E24AC59A800E234D6 /* Protocols */,
+			);
+			name = CoreUI;
+			sourceTree = "<group>";
+		};
+		0AA49F9E24AC59A800E234D6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0AA49F9F24AC59E600E234D6 /* ViewConfiguration.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0AA49FA124AC641B00E234D6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0AA49FA224AC645800E234D6 /* String */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0AA49FA224AC645800E234D6 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				0AA49FA324AC649500E234D6 /* Copies.strings */,
+			);
+			name = String;
 			sourceTree = "<group>";
 		};
 		80189D90FA82DD38543D380B /* Frameworks */ = {
@@ -363,6 +398,7 @@
 			files = (
 				0AA49F8024AC367F00E234D6 /* .gitignore in Resources */,
 				0AA49F5C24AC340600E234D6 /* LaunchScreen.storyboard in Resources */,
+				0AA49FA424AC649500E234D6 /* Copies.strings in Resources */,
 				0AA49F5924AC340600E234D6 /* Preview Assets.xcassets in Resources */,
 				0AA49F5624AC340600E234D6 /* Assets.xcassets in Resources */,
 			);
@@ -495,9 +531,9 @@
 				0AA49F5024AC340100E234D6 /* AppDelegate.swift in Sources */,
 				0AA49F9124AC428200E234D6 /* DetailView.swift in Sources */,
 				0AA49F9824AC461C00E234D6 /* DetailViewDelegate.swift in Sources */,
+				0AA49FA024AC59E600E234D6 /* ViewConfiguration.swift in Sources */,
 				0AA49F9524AC44C500E234D6 /* DetailViewController.swift in Sources */,
 				0AA49F5224AC340100E234D6 /* SceneDelegate.swift in Sources */,
-				0AA49F5424AC340100E234D6 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
