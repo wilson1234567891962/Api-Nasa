@@ -17,6 +17,7 @@
 		0AA49F6724AC340700E234D6 /* NasaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA49F6624AC340700E234D6 /* NasaTests.swift */; };
 		0AA49F7224AC340700E234D6 /* NasaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA49F7124AC340700E234D6 /* NasaUITests.swift */; };
 		0AA49F8024AC367F00E234D6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0AA49F7F24AC367F00E234D6 /* .gitignore */; };
+		0AA49F9124AC428200E234D6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA49F9024AC428200E234D6 /* DetailView.swift */; };
 		39FE1A8C529BD933E0FE03D0 /* Pods_Nasa_NasaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A161682E8F611B19CBD5106 /* Pods_Nasa_NasaUITests.framework */; };
 		848ACCB1F98B8603D1CFDF08 /* Pods_NasaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DBA5EFCEB09497D323B74E6 /* Pods_NasaTests.framework */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		0AA49F7124AC340700E234D6 /* NasaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaUITests.swift; sourceTree = "<group>"; };
 		0AA49F7324AC340700E234D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AA49F7F24AC367F00E234D6 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		0AA49F9024AC428200E234D6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		1E0F15338C4151BAFFD0CD2B /* Pods-Nasa-NasaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nasa-NasaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Nasa-NasaUITests/Pods-Nasa-NasaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		644FCA04416F85BD6F935E78 /* Pods-Nasa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nasa.debug.xcconfig"; path = "Target Support Files/Pods-Nasa/Pods-Nasa.debug.xcconfig"; sourceTree = "<group>"; };
 		6A161682E8F611B19CBD5106 /* Pods_Nasa_NasaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nasa_NasaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,8 +170,17 @@
 		0AA49F8B24AC418A00E234D6 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				0AA49F8F24AC422300E234D6 /* View */,
 			);
 			name = Detail;
+			sourceTree = "<group>";
+		};
+		0AA49F8F24AC422300E234D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0AA49F9024AC428200E234D6 /* DetailView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		80189D90FA82DD38543D380B /* Frameworks */ = {
@@ -436,6 +447,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AA49F5024AC340100E234D6 /* AppDelegate.swift in Sources */,
+				0AA49F9124AC428200E234D6 /* DetailView.swift in Sources */,
 				0AA49F5224AC340100E234D6 /* SceneDelegate.swift in Sources */,
 				0AA49F5424AC340100E234D6 /* ContentView.swift in Sources */,
 			);
