@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -119,6 +119,7 @@
 		0AA49F4E24AC340100E234D6 /* Nasa */ = {
 			isa = PBXGroup;
 			children = (
+				0AA49F8A24AC417B00E234D6 /* feature */,
 				0AA49F4F24AC340100E234D6 /* AppDelegate.swift */,
 				0AA49F5124AC340100E234D6 /* SceneDelegate.swift */,
 				0AA49F5324AC340100E234D6 /* ContentView.swift */,
@@ -156,6 +157,21 @@
 			path = NasaUITests;
 			sourceTree = "<group>";
 		};
+		0AA49F8A24AC417B00E234D6 /* feature */ = {
+			isa = PBXGroup;
+			children = (
+				0AA49F8B24AC418A00E234D6 /* Detail */,
+			);
+			path = feature;
+			sourceTree = "<group>";
+		};
+		0AA49F8B24AC418A00E234D6 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
 		80189D90FA82DD38543D380B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +206,7 @@
 				0AA49F4824AC340100E234D6 /* Sources */,
 				0AA49F4924AC340100E234D6 /* Frameworks */,
 				0AA49F4A24AC340100E234D6 /* Resources */,
+				CDF63C6251589ACFBB819D48 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,6 +244,7 @@
 				0AA49F6924AC340700E234D6 /* Sources */,
 				0AA49F6A24AC340700E234D6 /* Frameworks */,
 				0AA49F6B24AC340700E234D6 /* Resources */,
+				73DAC8FD52C2C83AB81545C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -354,6 +372,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		73DAC8FD52C2C83AB81545C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nasa-NasaUITests/Pods-Nasa-NasaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nasa-NasaUITests/Pods-Nasa-NasaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nasa-NasaUITests/Pods-Nasa-NasaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B29456B9FD9B2E5313C0A5DE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -374,6 +409,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDF63C6251589ACFBB819D48 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nasa/Pods-Nasa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nasa/Pods-Nasa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nasa/Pods-Nasa-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
