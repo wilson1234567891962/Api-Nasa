@@ -126,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				0AA49F8A24AC417B00E234D6 /* feature */,
-				0AA49F4F24AC340100E234D6 /* AppDelegate.swift */,
 				0AA49F5124AC340100E234D6 /* SceneDelegate.swift */,
 				0AA49F5324AC340100E234D6 /* ContentView.swift */,
 				0AA49F5524AC340600E234D6 /* Assets.xcassets */,
@@ -166,6 +165,7 @@
 		0AA49F8A24AC417B00E234D6 /* feature */ = {
 			isa = PBXGroup;
 			children = (
+				0AA49F9B24AC4D5500E234D6 /* Commons */,
 				0AA49F8B24AC418A00E234D6 /* Detail */,
 			);
 			path = feature;
@@ -211,6 +211,22 @@
 				0AA49F9724AC461C00E234D6 /* DetailViewDelegate.swift */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		0AA49F9B24AC4D5500E234D6 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				0AA49F9C24AC4D6900E234D6 /* Aplication */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		0AA49F9C24AC4D6900E234D6 /* Aplication */ = {
+			isa = PBXGroup;
+			children = (
+				0AA49F4F24AC340100E234D6 /* AppDelegate.swift */,
+			);
+			name = Aplication;
 			sourceTree = "<group>";
 		};
 		80189D90FA82DD38543D380B /* Frameworks */ = {
