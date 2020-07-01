@@ -14,5 +14,22 @@ import SnapKit
 
 class DetailView: UIView {
     
+    private weak var delegate: DetailViewDelegate?
+
+    // MARK: - init
+
+    private(set) lazy var detailView: UIView = {
+         let view = UIView()
+         return view
+     }()
+    
+    init(delegate: DetailViewDelegate?) {
+        self.delegate = delegate
+        super.init(frame: .zero)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
 

@@ -18,6 +18,8 @@
 		0AA49F7224AC340700E234D6 /* NasaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA49F7124AC340700E234D6 /* NasaUITests.swift */; };
 		0AA49F8024AC367F00E234D6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0AA49F7F24AC367F00E234D6 /* .gitignore */; };
 		0AA49F9124AC428200E234D6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA49F9024AC428200E234D6 /* DetailView.swift */; };
+		0AA49F9524AC44C500E234D6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA49F9424AC44C500E234D6 /* DetailViewController.swift */; };
+		0AA49F9824AC461C00E234D6 /* DetailViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA49F9724AC461C00E234D6 /* DetailViewDelegate.swift */; };
 		39FE1A8C529BD933E0FE03D0 /* Pods_Nasa_NasaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A161682E8F611B19CBD5106 /* Pods_Nasa_NasaUITests.framework */; };
 		848ACCB1F98B8603D1CFDF08 /* Pods_NasaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DBA5EFCEB09497D323B74E6 /* Pods_NasaTests.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +58,8 @@
 		0AA49F7324AC340700E234D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AA49F7F24AC367F00E234D6 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0AA49F9024AC428200E234D6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		0AA49F9424AC44C500E234D6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0AA49F9724AC461C00E234D6 /* DetailViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewDelegate.swift; sourceTree = "<group>"; };
 		1E0F15338C4151BAFFD0CD2B /* Pods-Nasa-NasaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nasa-NasaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Nasa-NasaUITests/Pods-Nasa-NasaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		644FCA04416F85BD6F935E78 /* Pods-Nasa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nasa.debug.xcconfig"; path = "Target Support Files/Pods-Nasa/Pods-Nasa.debug.xcconfig"; sourceTree = "<group>"; };
 		6A161682E8F611B19CBD5106 /* Pods_Nasa_NasaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nasa_NasaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,6 +174,9 @@
 		0AA49F8B24AC418A00E234D6 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				0AA49F9624AC457D00E234D6 /* Delegate */,
+				0AA49F9324AC43C600E234D6 /* Model */,
+				0AA49F9224AC43AD00E234D6 /* Controller */,
 				0AA49F8F24AC422300E234D6 /* View */,
 			);
 			name = Detail;
@@ -181,6 +188,29 @@
 				0AA49F9024AC428200E234D6 /* DetailView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0AA49F9224AC43AD00E234D6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0AA49F9424AC44C500E234D6 /* DetailViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0AA49F9324AC43C600E234D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0AA49F9624AC457D00E234D6 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				0AA49F9724AC461C00E234D6 /* DetailViewDelegate.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 		80189D90FA82DD38543D380B /* Frameworks */ = {
@@ -448,6 +478,8 @@
 			files = (
 				0AA49F5024AC340100E234D6 /* AppDelegate.swift in Sources */,
 				0AA49F9124AC428200E234D6 /* DetailView.swift in Sources */,
+				0AA49F9824AC461C00E234D6 /* DetailViewDelegate.swift in Sources */,
+				0AA49F9524AC44C500E234D6 /* DetailViewController.swift in Sources */,
 				0AA49F5224AC340100E234D6 /* SceneDelegate.swift in Sources */,
 				0AA49F5424AC340100E234D6 /* ContentView.swift in Sources */,
 			);
