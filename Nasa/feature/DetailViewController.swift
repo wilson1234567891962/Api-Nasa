@@ -11,13 +11,39 @@ import UIKit
 
 class DetailViewController: UIViewController, DetailViewDelegate {
     
-    private lazy var detailView: DetailView = {
-        let view = DetailView(delegate: self)
-        return view
+    func didSelectItem(item: DetailModel) {
+       print(item)
+    }
+        
+   private var items: [DetailModel] = Array()
+
+   private lazy var detailView: DetailView = {
+           let view = DetailView(delegate: self)
+           return view
     }()
     
+      // MARK: - init
     init(){
-       super.init(nibName: nil, bundle: nil)
+        let test: String = "{\"url\":\"https://api.nasa.gov/planetary/apod/static/default_apod_image.jpg\"}"
+        if let jsonData = test.data(using: .utf8){
+           let detailModel:DetailModel = try! JSONDecoder().decode(DetailModel.self, from: jsonData)
+            var temp = Array<DetailModel>()
+            temp.append(detailModel)
+            temp.append(detailModel)
+            temp.append(detailModel)
+            temp.append(detailModel)
+            temp.append(detailModel)
+            temp.append(detailModel)
+                 temp.append(detailModel)
+            temp.append(detailModel)
+                 temp.append(detailModel)
+            temp.append(detailModel)
+                 temp.append(detailModel)
+            temp.append(detailModel)
+                 temp.append(detailModel)
+            self.items = temp
+        }
+        super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder: NSCoder) {
@@ -26,7 +52,13 @@ class DetailViewController: UIViewController, DetailViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        detailView.setupView(cards: self.items)
         self.view = detailView
         view.backgroundColor = .white
     }
 }
+
+
+
+
+

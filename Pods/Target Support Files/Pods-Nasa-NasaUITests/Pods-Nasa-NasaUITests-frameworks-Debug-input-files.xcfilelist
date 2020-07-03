@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-Nasa-NasaUITests/Pods-Nasa-NasaUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/EasyTipView/EasyTipView.framework
 ${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
