@@ -36,13 +36,18 @@ class DetailView: UIView {
         return view
     }()
     
-    private lazy var detailButton: UITextField = {
+    private lazy var inputTextField: UITextField = {
            let textInput = UITextField()
            textInput.placeholder = "buscador"
-           // textInput.addTarget(self, action: #selector(goHomeAction), for: .touchUpInside)
+           textInput.addTarget(self, action: #selector(filter), for: .editingChanged)
            textInput.textAlignment = .center
            return textInput
     }()
+    
+    @objc private func filter() {
+        self.delegate?.filterData(word: self.inputTextField.text ?? "")
+     }
+     
     
     private weak var delegate: DetailViewDelegate?
     // MARK: - init
@@ -75,7 +80,7 @@ extension DetailView: ViewConfiguration {
         scrollView.addSubview(containerView)
         containerView.addSubview(titleLabel)
         containerView.addSubview(lineSeparator)
-        containerView.addSubview(detailButton)
+        containerView.addSubview(inputTextField)
         containerView.addSubview(detailListView)
         
     }
@@ -103,7 +108,7 @@ extension DetailView: ViewConfiguration {
             make.height.equalTo(1)
         }
         
-        detailButton.snp.makeConstraints { (make) in
+        inputTextField.snp.makeConstraints { (make) in
             make.top.equalTo(lineSeparator.snp.top)
             make.trailing.equalToSuperview()
             make.width.equalToSuperview()
@@ -111,7 +116,7 @@ extension DetailView: ViewConfiguration {
         }
         
         detailListView.snp.makeConstraints { (make) in
-            make.top.equalTo(detailButton.snp.bottom)
+            make.top.equalTo(inputTextField.snp.bottom)
             make.leading.trailing.bottom.equalToSuperview()
         }
         

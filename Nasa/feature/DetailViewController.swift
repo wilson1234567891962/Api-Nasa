@@ -17,6 +17,10 @@ class DetailViewController: UIViewController, DetailViewDelegate {
        }
     }
     
+    func filterData(word: String) {
+        print(word)
+   }
+    
    private var items: [DetailModel] = Array()
    private var service = Services()
   
