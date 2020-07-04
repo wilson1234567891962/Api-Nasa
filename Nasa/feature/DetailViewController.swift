@@ -14,9 +14,10 @@ class DetailViewController: UIViewController, DetailViewDelegate {
     func didSelectItem(item: DetailModel) {
        print(item)
     }
-        
+    
    private var items: [DetailModel] = Array()
-
+   private var service = Services()
+  
    private lazy var detailView: DetailView = {
            let view = DetailView(delegate: self)
            return view
@@ -24,25 +25,7 @@ class DetailViewController: UIViewController, DetailViewDelegate {
     
       // MARK: - init
     init(){
-        let test: String = "{\"url\":\"https://api.nasa.gov/planetary/apod/static/default_apod_image.jpg\"}"
-        if let jsonData = test.data(using: .utf8){
-           let detailModel:DetailModel = try! JSONDecoder().decode(DetailModel.self, from: jsonData)
-            var temp = Array<DetailModel>()
-            temp.append(detailModel)
-            temp.append(detailModel)
-            temp.append(detailModel)
-            temp.append(detailModel)
-            temp.append(detailModel)
-            temp.append(detailModel)
-                 temp.append(detailModel)
-            temp.append(detailModel)
-                 temp.append(detailModel)
-            temp.append(detailModel)
-                 temp.append(detailModel)
-            temp.append(detailModel)
-                 temp.append(detailModel)
-            self.items = temp
-        }
+        self.items = Array()
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -52,10 +35,22 @@ class DetailViewController: UIViewController, DetailViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.callServices()
         detailView.setupView(cards: self.items)
         self.view = detailView
         view.backgroundColor = .white
     }
+    
+    func callServices(){
+       let group = DispatchGroup()
+        group.enter()
+        self.service.getData{ data, error in
+            self.items = data
+            group.leave()
+        }
+        group.wait()
+    }
+    
 }
 
 

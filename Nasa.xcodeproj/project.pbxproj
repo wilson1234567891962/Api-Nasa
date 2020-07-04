@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		022FC31D927930B1291D7D00 /* Pods_Nasa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B93223F4411FF2A9B8617C6 /* Pods_Nasa.framework */; };
+		0A00A6A924B0C9FD00AD0F73 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A00A6A824B0C9FD00AD0F73 /* Services.swift */; };
 		0A50C65324AEA050005DE707 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A50C65224AEA050005DE707 /* Detail.swift */; };
 		0A50C65524AEA391005DE707 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A50C65424AEA391005DE707 /* DetailView.swift */; };
 		0A50C65724AEA414005DE707 /* DetailViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A50C65624AEA414005DE707 /* DetailViewDelegate.swift */; };
 		0A50C65A24AEA4A6005DE707 /* DetailListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A50C65924AEA4A6005DE707 /* DetailListCellView.swift */; };
 		0A50C65C24AEA6CE005DE707 /* DetailListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A50C65B24AEA6CE005DE707 /* DetailListView.swift */; };
-		0A50C65F24AEE3C8005DE707 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A50C65E24AEE3C8005DE707 /* Service.swift */; };
 		0AA49F5024AC340100E234D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA49F4F24AC340100E234D6 /* AppDelegate.swift */; };
 		0AA49F5224AC340100E234D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA49F5124AC340100E234D6 /* SceneDelegate.swift */; };
 		0AA49F5624AC340600E234D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA49F5524AC340600E234D6 /* Assets.xcassets */; };
@@ -47,12 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A00A6A824B0C9FD00AD0F73 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		0A50C65224AEA050005DE707 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 		0A50C65424AEA391005DE707 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		0A50C65624AEA414005DE707 /* DetailViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewDelegate.swift; sourceTree = "<group>"; };
 		0A50C65924AEA4A6005DE707 /* DetailListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListCellView.swift; sourceTree = "<group>"; };
 		0A50C65B24AEA6CE005DE707 /* DetailListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListView.swift; sourceTree = "<group>"; };
-		0A50C65E24AEE3C8005DE707 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		0AA49F4C24AC340100E234D6 /* Nasa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nasa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA49F4F24AC340100E234D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AA49F5124AC340100E234D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +109,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A00A6A724B0C9D700AD0F73 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0A00A6A824B0C9FD00AD0F73 /* Services.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		0A50C65124AEA001005DE707 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,14 +131,6 @@
 				0A50C65924AEA4A6005DE707 /* DetailListCellView.swift */,
 			);
 			name = cell;
-			sourceTree = "<group>";
-		};
-		0A50C65D24AEE3AB005DE707 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				0A50C65E24AEE3C8005DE707 /* Service.swift */,
-			);
-			name = Services;
 			sourceTree = "<group>";
 		};
 		0AA49F4324AC340100E234D6 = {
@@ -207,7 +207,7 @@
 		0AA49F8B24AC418A00E234D6 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				0A50C65D24AEE3AB005DE707 /* Services */,
+				0A00A6A724B0C9D700AD0F73 /* Services */,
 				0A50C65124AEA001005DE707 /* Model */,
 				0AA49F9624AC457D00E234D6 /* Delegate */,
 				0AA49F9224AC43AD00E234D6 /* Controller */,
@@ -561,9 +561,9 @@
 				0AA49F5024AC340100E234D6 /* AppDelegate.swift in Sources */,
 				0A50C65C24AEA6CE005DE707 /* DetailListView.swift in Sources */,
 				0A50C65324AEA050005DE707 /* Detail.swift in Sources */,
+				0A00A6A924B0C9FD00AD0F73 /* Services.swift in Sources */,
 				0AA49FA024AC59E600E234D6 /* ViewConfiguration.swift in Sources */,
 				0AA49F9524AC44C500E234D6 /* DetailViewController.swift in Sources */,
-				0A50C65F24AEE3C8005DE707 /* Service.swift in Sources */,
 				0A50C65A24AEA4A6005DE707 /* DetailListCellView.swift in Sources */,
 				0AA49F5224AC340100E234D6 /* SceneDelegate.swift in Sources */,
 			);
