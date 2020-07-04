@@ -18,7 +18,7 @@ class Services {
                let urlKey = "https://api.nasa.gov/planetary/apod?date=" + self.getFormattedDate(system: currentDateTime, formatter: "yyyy-MM-dd") + "&api_key=MfiHBbEJ4IPMI0osT9M1F5crnDLxf1HlFhfM5zvB";
                  let count = String(n)
                  let itemCount = symbol + count
-                 currentDateTime=self.sumDate(system: currentDateTime, count: Int(itemCount) ?? n)
+                 currentDateTime=self.subtractDate(system: currentDateTime, count: Int(itemCount) ?? n)
                  let url = URL(string: urlKey)!
                  let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
                  guard let data = data else {
@@ -44,7 +44,7 @@ class Services {
            return df.string(from: system)
     }
     
-    func sumDate(system: Date, count: Int) -> Date {
+    func subtractDate(system: Date, count: Int) -> Date {
         return Calendar.current.date(byAdding: .day, value: count, to: Date()) ?? Date()
     }
     
