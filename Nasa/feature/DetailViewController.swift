@@ -12,7 +12,9 @@ import UIKit
 class DetailViewController: UIViewController, DetailViewDelegate {
     
     func didSelectItem(item: DetailModel) {
-       print(item)
+        if let url = URL(string: item.url ??  "https://apod.nasa.gov/apod/image/2007/msv1000crop.jpg") {
+           UIApplication.shared.open(url)
+       }
     }
     
    private var items: [DetailModel] = Array()

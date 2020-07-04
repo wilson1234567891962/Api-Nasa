@@ -58,7 +58,7 @@ extension DetailListView: ViewConfiguration {
             let detailListCell = DetailListCellView(delegate: delegate, item: itemCell)
             verticalStackView.addArrangedSubview(detailListCell)
             detailListCell.snp.makeConstraints { (make) in
-                make.height.equalTo(91)
+                make.height.equalTo(120)
                 make.width.equalToSuperview()
             }
         }

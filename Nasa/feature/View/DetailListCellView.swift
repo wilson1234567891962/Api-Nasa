@@ -31,7 +31,7 @@ class DetailListCellView: UIView {
     
     private lazy var valueTitle: UILabel = {
            let label = UILabel()
-           label.textColor = .red
+           label.textColor = .black
            label.numberOfLines = 2
            return label
     }()
@@ -44,15 +44,27 @@ class DetailListCellView: UIView {
        
     private lazy var dateValue: UILabel = {
        let label = UILabel()
-       label.textColor = .red
+       label.textColor = .black
        return label
+    }()
+    
+    private lazy var detailButton: UIButton = {
+         let button = UIButton()
+         button.setTitle("Ver detalle", for: .normal)
+         button.setTitleColor(.blue, for: .normal)
+         button.addTarget(self, action: #selector(goHomeAction), for: .touchUpInside)
+         return button
     }()
        
     private lazy var lineSeparator: UIView = {
            let view = UIView()
-        view.backgroundColor = .black
+           view.backgroundColor = .black
            return view
     }()
+    
+    @objc private func goHomeAction() {
+        self.delegate?.didSelectItem(item: self.item)
+    }
     
     private var item: DetailModel
     private var delegate: DetailViewDelegate?
@@ -64,6 +76,7 @@ class DetailListCellView: UIView {
         super.init(frame: .zero)
         setupViewConfiguration()
     }
+    
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -92,6 +105,7 @@ extension DetailListCellView: ViewConfiguration {
         subContainerView.addSubview(valueTitle)
         subContainerView.addSubview(dateHeader)
         subContainerView.addSubview(dateValue)
+        subContainerView.addSubview(detailButton)
     }
     
     func setupConstraints() {
@@ -103,7 +117,7 @@ extension DetailListCellView: ViewConfiguration {
         }
         
        containerSubItem.snp.makeConstraints { (make) in
-            make.height.equalTo(32)
+            make.height.equalTo(69)
             make.top.equalToSuperview().offset(24)
             make.leading.equalToSuperview().offset(15)
             make.trailing.equalToSuperview().offset(-66)
@@ -131,6 +145,7 @@ extension DetailListCellView: ViewConfiguration {
             make.bottom.equalTo(dateValue.snp.top).offset(-8)
         }
         
+        
         dateHeader.snp.makeConstraints { (make) in
             make.height.equalTo(16)
             make.leading.equalToSuperview()
@@ -140,6 +155,12 @@ extension DetailListCellView: ViewConfiguration {
         dateValue.snp.makeConstraints { (make) in
              make.height.equalTo(16)
              make.trailing.equalToSuperview()
+        }
+        
+        detailButton.snp.makeConstraints { (make) in
+            make.top.equalTo(dateValue.snp.top)
+            make.trailing.equalToSuperview()
+            make.height.equalTo(64)
         }
         
         lineSeparator.snp.makeConstraints { (make) in
