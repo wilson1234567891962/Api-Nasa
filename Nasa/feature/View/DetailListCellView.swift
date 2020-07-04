@@ -52,7 +52,7 @@ class DetailListCellView: UIView {
          let button = UIButton()
          button.setTitle("Ver detalle", for: .normal)
          button.setTitleColor(.blue, for: .normal)
-         button.addTarget(self, action: #selector(goHomeAction), for: .touchUpInside)
+         button.addTarget(self, action: #selector(showDetail), for: .touchUpInside)
          return button
     }()
        
@@ -62,7 +62,7 @@ class DetailListCellView: UIView {
            return view
     }()
     
-    @objc private func goHomeAction() {
+    @objc private func showDetail() {
         self.delegate?.didSelectItem(item: self.item)
     }
     

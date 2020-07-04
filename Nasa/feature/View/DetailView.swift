@@ -36,6 +36,14 @@ class DetailView: UIView {
         return view
     }()
     
+    private lazy var detailButton: UITextField = {
+           let textInput = UITextField()
+           textInput.placeholder = "buscador"
+           // textInput.addTarget(self, action: #selector(goHomeAction), for: .touchUpInside)
+           textInput.textAlignment = .center
+           return textInput
+    }()
+    
     private weak var delegate: DetailViewDelegate?
     // MARK: - init
     
@@ -67,6 +75,7 @@ extension DetailView: ViewConfiguration {
         scrollView.addSubview(containerView)
         containerView.addSubview(titleLabel)
         containerView.addSubview(lineSeparator)
+        containerView.addSubview(detailButton)
         containerView.addSubview(detailListView)
         
     }
@@ -94,8 +103,15 @@ extension DetailView: ViewConfiguration {
             make.height.equalTo(1)
         }
         
+        detailButton.snp.makeConstraints { (make) in
+            make.top.equalTo(lineSeparator.snp.top)
+            make.trailing.equalToSuperview()
+            make.width.equalToSuperview()
+            make.height.equalTo(32)
+        }
+        
         detailListView.snp.makeConstraints { (make) in
-            make.top.equalTo(lineSeparator.snp.bottom)
+            make.top.equalTo(detailButton.snp.bottom)
             make.leading.trailing.bottom.equalToSuperview()
         }
         
