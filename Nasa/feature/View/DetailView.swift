@@ -64,8 +64,13 @@ class DetailView: UIView {
     
      // MARK: - Setup View
     
-    func setupView(cards: [DetailModel]) {
-        detailListView.setup(delegate: delegate, item: cards)
+    func setupView(items: [DetailModel]) {
+        detailListView.setup(delegate: delegate, item: items)
+    }
+    
+    
+    func refreshData(items: [DetailModel]) {
+        detailListView.refresh(item: items)
     }
     
 }
