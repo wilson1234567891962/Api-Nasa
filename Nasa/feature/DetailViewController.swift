@@ -21,8 +21,7 @@ class DetailViewController: UIViewController, DetailViewDelegate {
         let resultArray = self.items.filter {
             $0.date!.contains(word)
         }
-        detailView.refreshData(items: resultArray)
-        self.view = detailView
+         print(resultArray)
    }
     
    private var items: [DetailModel] = Array()

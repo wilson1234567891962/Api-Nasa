@@ -30,12 +30,6 @@ class DetailListView: UIView {
         self.items = item
         setupViewConfiguration()
     }
-    
-    func refresh(item: [DetailModel]) {
-          self.items = item
-          self.renderList()
-    }
-    
 }
 // MARK: - View Configuration
 extension DetailListView: ViewConfiguration {
@@ -70,3 +64,4 @@ extension DetailListView: ViewConfiguration {
     }
     
 }
+

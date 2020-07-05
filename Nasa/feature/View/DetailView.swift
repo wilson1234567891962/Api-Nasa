@@ -67,12 +67,6 @@ class DetailView: UIView {
     func setupView(items: [DetailModel]) {
         detailListView.setup(delegate: delegate, item: items)
     }
-    
-    
-    func refreshData(items: [DetailModel]) {
-        detailListView.refresh(item: items)
-    }
-    
 }
 
 // MARK: - View Configuration
