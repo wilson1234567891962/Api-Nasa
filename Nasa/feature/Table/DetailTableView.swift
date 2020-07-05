@@ -21,6 +21,7 @@ class DetailTableView: UITableView, UITableViewDelegate, UITableViewDataSource {
         super.init(frame: CGRect.zero, style: UITableView.Style.plain)
         self.delegate = self
         self.delegateDetail = delegate
+        self.separatorStyle = .none
         self.dataSource = self
         self.backgroundColor = .white
         register(cellType: DetailTableViewCell.self)
