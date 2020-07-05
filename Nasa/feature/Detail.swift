@@ -22,6 +22,13 @@ struct  DetailModel : Codable {
         explanation = try values.decode(String.self, forKey: .explanation)
         title = try values.decode(String.self, forKey: .title)
     }
+   
+    init()  {
+       url = ""
+       date = ""
+       explanation = ""
+       title = ""
+    }
     
     public func encode(to encoder: Encoder) throws {
         //Implement when needed

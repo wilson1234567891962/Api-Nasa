@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double EasyTipViewVersionNumber;
-FOUNDATION_EXPORT const unsigned char EasyTipViewVersionString[];
+FOUNDATION_EXPORT double ReusableVersionNumber;
+FOUNDATION_EXPORT const unsigned char ReusableVersionString[];
 

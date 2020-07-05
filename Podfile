@@ -7,6 +7,7 @@ target 'Nasa' do
 
   # Pods for Nasa
   pod 'SnapKit', '~> 5.0.0'
+  pod 'Reusable', '~> 4.0'
   
   target 'NasaTests' do
     inherit! :search_paths
